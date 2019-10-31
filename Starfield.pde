@@ -15,7 +15,8 @@ void draw()
   opacity();
   for (int i = star.length - 1; i >= 0; i--) {
     star[i].show();
-    star[i].move  }
+    star[i].move();  
+  }
 }
 void opacity(){
   fill(0, 0, 0, 40);
