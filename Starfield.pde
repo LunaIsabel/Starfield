@@ -1,5 +1,5 @@
 //your code here
-Particle[] star = new Particle[1000];
+Particle[] star = new Particle[150];
 void setup()
 {
   //your code here
