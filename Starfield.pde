@@ -5,7 +5,7 @@ void setup()
   //your code here
   size(900, 900);
   background(0, 0, 0);
-  for (int i = star.length - 1; i >= 0; i--) {
+  for (int i = 0; i < star.length; i++) {
     star[i] = new Particle();
   }
   star[0] = new OddballParticle();
@@ -13,10 +13,9 @@ void setup()
 void draw()
 {
   opacity();
-  for (int i = 0; i < star.length; i++) {
+  for (int i = star.length - 1; i >= 0; i--) {
     star[i].show();
-    star[i].move();
-  }
+    star[i].move  }
 }
 void opacity(){
   fill(0, 0, 0, 40);
